@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <header id = "header">
+            <h1 id ="pageTitle">Hindy Chat App</h1>
+        </header>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                <form action ="/chat.html">
+                    <label>Disaply name</label>
+                    <input type="text" name="username" placeholder="Display name" required>
+                    <label>Room</label>
+                    <input type = "text" name = "room" placeholder="room" required>
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            // When the user scrolls down 50px from the top of the document, resize the header's font size
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "20px";
+              } else {
+                document.getElementById("header").style.fontSize = "40px";
+              }
+            }
+            </script>
+        <footer id = footerMain>
+
+        </footer>
+    </body>
+</html>
